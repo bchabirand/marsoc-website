@@ -1,0 +1,37 @@
+.navbar {
+	.navbar-brand {
+		margin: 0 20px;
+		width: 180px;
+		height: auto;
+	}
+	.dropdown-menu {
+		top: 78px;
+		.dropdown-item {
+			font-family: $font-primary;
+			font-size: 16px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			font-weight: 400;
+			&:not(:first-child) {
+				margin-top: 15px;
+			}
+		}
+	}
+}
+
+.navbar-expand-lg {
+	.navbar-collapse {
+		justify-content: center;
+	}
+	.navbar-nav {
+		align-items: center;
+		.nav-link {
+			margin: 0 5px;
+			font-family: $font-primary;
+			font-size: 16px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			font-weight: 400;
+		}
+	}
+}

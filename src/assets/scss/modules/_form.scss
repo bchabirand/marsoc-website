@@ -1,0 +1,11 @@
+.form-control {
+	border: 0;
+	border-bottom: 1px solid $primary;
+}
+
+label {
+	color: $gray-100;
+	font-family: $font-primary;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
