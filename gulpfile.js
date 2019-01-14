@@ -26,7 +26,7 @@ gulp.task('serve', ['sass'], function() {
         server: "./src"  
     });
 
-    gulp.watch(['node_modules/bootstrap/scss/*.scss', 'src/assets/scss/*.scss'], ['sass']);
+    gulp.watch(['node_modules/bootstrap/scss/*.scss', 'src/assets/scss/*.scss', 'src/assets/scss/layout/*.scss', 'src/assets/scss/modules/*.scss'], ['sass']);
     gulp.watch("src/*.html").on('change', browserSync.reload);
 });
 
@@ -37,7 +37,6 @@ gulp.task('prefix', () =>
             browsers: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(gulp.dest('dist/assets/css'))
 );
 
@@ -48,5 +47,5 @@ gulp.task('minify-css', () => {
     .pipe(gulp.dest('dist/assets/css'));
 });
 
-gulp.task('default', ['js', 'prefix', 'serve']);
+gulp.task('default', ['js', 'serve']);
 

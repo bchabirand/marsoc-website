@@ -1,0 +1,11 @@
+#newsCarousel {
+	background-color: rgba($dark, .8);
+	.carousel-inner {
+		padding: 15px 0;
+	}
+	p {
+		margin: 0;
+		color: $gray-100;
+		font-size: 18px;
+	}
+}
