@@ -5,6 +5,9 @@
 .gold {
   color: #93813E; }
 
+.container {
+  z-index: 99; }
+
 .bg-img {
   width: 100%;
   height: auto;
@@ -53,7 +56,7 @@
   .navbar .navbar-nav {
     align-items: center; }
     .navbar .navbar-nav .nav-link {
-      margin: 0 5px;
+      margin: 0 10px;
       font-family: "Oswald";
       font-size: 16px;
       text-transform: uppercase;
@@ -83,7 +86,7 @@
     z-index: 99; }
 
 #home {
-  height: 700px;
+  padding: 80px 0;
   position: relative;
   background-color: #0D0D0D;
   display: flex;
@@ -96,9 +99,6 @@
     bottom: 0;
     left: 0;
     background-color: rgba(16, 8, 6, 0.4); }
-
-.container {
-  z-index: 99; }
 
 /* modules */
 .btn {
@@ -119,10 +119,52 @@ label {
   letter-spacing: 1px; }
 
 #newsCarousel {
-  background-color: rgba(13, 13, 13, 0.8); }
+  margin-bottom: 10px; }
   #newsCarousel .carousel-inner {
     padding: 15px 0; }
   #newsCarousel p {
     margin: 0;
     color: #c2c2c2;
+    font-family: "Oswald";
     font-size: 18px; }
+
+.card {
+  margin-bottom: 10px;
+  overflow: hidden; }
+  .card * {
+    transition: all .8s; }
+  .card.card-bg-home {
+    height: 187px; }
+    .card.card-bg-home:hover {
+      cursor: pointer; }
+      .card.card-bg-home:hover .bg-img {
+        transform: scale(1.1); }
+      .card.card-bg-home:hover .card-caption {
+        color: #c2c2c2; }
+  .card .card-text, .card .card-title {
+    font-family: "Oswald";
+    color: #c2c2c2; }
+  .card .card-title {
+    font-size: 18px; }
+  .card .card-text {
+    font-size: 15px; }
+    .card .card-text:not(:last-child) {
+      margin-bottom: 4px; }
+  .card .card-caption {
+    margin: 0;
+    padding: 5px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: "Oswald";
+    font-size: 16px;
+    color: #93813E;
+    background-color: rgba(13, 13, 13, 0.85);
+    text-align: center; }
+  .card .card-avatar {
+    height: 100px;
+    width: 80px; }
+  .card .card-grade {
+    height: 32px;
+    width: auto; }

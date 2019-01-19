@@ -1,5 +1,5 @@
 #home {
-	height: 700px;
+	padding: 80px 0;
 	position: relative;
 	background-color: $dark;
 	display: flex;
@@ -13,8 +13,4 @@
 		left: 0;
 		background-color: rgba(16,8,6,.4);
 	}
-}
-
-.container {
-	z-index: 99;
 }
