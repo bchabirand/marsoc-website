@@ -1,6 +1,11 @@
 .form-control {
 	border: 0;
 	border-bottom: 1px solid $primary;
+	&:disabled {
+		padding: 0;
+		color: $gray-100;
+		border-bottom: 0;
+	}
 }
 
 label {

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Mon profil - Marsoc</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bitter:400,400i" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link rel="stylesheet" href="/assets/css/bootstrap.css">
+	<link rel="stylesheet" href="/assets/css/style.css">
+	<link rel="icon" href="/assets/img/favicon.ico">
+</head>
+
+<body class="bg-dark">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="dropDownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Profile
+					</a>
+					<div class="dropdown-menu" aria-labelledby="dropDownProfile">
+						<a class="dropdown-item" href="#">Your profile</a>
+						<a class="dropdown-item" href="#">Edit your profile</a>
+						<a class="dropdown-item" href="#">Change your password</a>
+						<a class="dropdown-item" href="#">Staff</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="dropDownAbout" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						About
+					</a>
+					<div class="dropdown-menu" aria-labelledby="dropDownAbout">
+						<a class="dropdown-item" href="#">RAM</a>
+						<a class="dropdown-item" href="#">MIR</a>
+						<a class="dropdown-item" href="#">MPT</a>
+					</div>
+				</li>
+				<a class="navbar-brand" href="#">
+					<img class="navbar-brand mx-auto" src="/assets/img/marsoc.png" alt="Marsoc 123 Tristan Team">
+				</a>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="dropDownEvents" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Events
+					</a>
+					<div class="dropdown-menu" aria-labelledby="dropDownEvents">
+						<a class="dropdown-item" href="#">Calendar</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="dropDownConnect" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Connect
+					</a>
+					<div class="dropdown-menu" aria-labelledby="dropDownConnect">
+						<a class="dropdown-item" href="#">Contact Staff</a>
+						<a class="dropdown-item" href="#">Facebook</a>
+						<a class="dropdown-item" href="#">Youtube</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Logout <span class="sr-only">(current)</span></a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<section id="profile">
+		<div class="bg-filter">
+			<img src="/assets/img/bg-body_1920w.png" srcset="/assets/img/bg-body_320w.png 320w,
+			/assets/img/bg-body_640w.png 640w,
+			/assets/img/bg-body_720w.png 720w,
+			/assets/img/bg-body_1280w.png 1280w,
+			/assets/img/bg-body_1920w.png 1920w,
+			/assets/img/bg-body_2560w.png 2x" sizes="100vw" class="bg-img" alt="">
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-4 offset-1">
+					<!-- <div class="p-3 mb-2 bg-dark-tr">
+						<a href="#">Mon profil</a>
+					</div>
+					<div class="p-3 mb-2 bg-dark-tr">
+						<a href="#">Modifier son profil</a>
+					</div>
+					<div class="p-3 bg-dark-tr">
+						<a href="#">Modifier son mot de passe</a>
+					</div> -->
+				</div>
+				<div class="col-6">
+					<div class="p-4 mb-3 bg-dark-tr shadow">
+						<h2 class="mb-3 text-muted">Profil</h2>
+						<div class="row">
+							<div class="col-md-4">
+								<label class="gold" for="username">Nom de guerre</label>
+								<input type="text" class="form-control" id="username" placeholder="" value="WARDOG" readonly="" disabled="">
+							</div>
+							<div class="col-md-4">
+								<label class="gold" for="birthdate">Date de naissance</label>
+								<input type="text" class="form-control" id="birthdate" placeholder="" value="29-11-1993" readonly="" disabled="">
+							</div>
+							<div class="col-md-4">
+								<label class="gold" for="age">Age</label>
+								<input type="text" class="form-control" id="age" placeholder="" value="25" readonly="" disabled="">
+							</div>
+						</div>
+					</div>
+					<div class="p-4 mb-3 bg-dark-tr">
+						<h2 class="mb-3 text-muted">Coordonnées</h2>
+						<div class="row">
+							<div class="col-md-6">
+								<label class="gold" for="email">Email</label>
+								<input type="text" class="form-control" id="email" placeholder="" value="wardog@marsoctristanteam.com" readonly="" disabled="">
+							</div>
+							<div class="col-md-6 mb-3">
+								<label class="gold" for="phone">Numéro de téléphone</label>
+								<input type="text" class="form-control" id="phone" placeholder="" value="0785649040" readonly="" disabled="">
+							</div>
+							<div class="col-md-6">
+								<label class="gold" for="phone">Numéro de téléphone supp.</label>
+								<input type="text" class="form-control" id="phone" placeholder="" value="Aucun" readonly="" disabled="">
+							</div>
+						</div>
+					</div>
+					<div class="p-4 bg-dark-tr">
+						<h2 class="mb-3 text-muted">Utilisateur</h2>
+						<div class="row">
+							<div class="col-md-4">
+								<label class="gold" for="online">En ligne</label>
+								<input type="text" class="form-control" id="online" placeholder="" value="Non" readonly="" disabled="">
+							</div>
+							<div class="col-md-4">
+								<label class="gold" for="last-login">Dernière connexion</label>
+								<input type="text" class="form-control" id="last-login" placeholder="" value="21-01-2019" readonly="" disabled="">
+							</div>
+							<div class="col-md-4">
+								<label class="gold" for="admin">Admin</label>
+								<input type="text" class="form-control" id="admin" placeholder="" value="Oui" readonly="" disabled="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/tether.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+</body>
+</html>

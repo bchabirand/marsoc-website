@@ -1,9 +1,41 @@
+body {
+	background-color: $dark;
+}
+section {
+	position: relative;
+}
+p {
+	color: $gray-100;
+}
+h1, h2, h3, h4, h5 {
+	color: $gray-100;
+}
+ul {
+	list-style: none;
+}
+
+.bg-filter {
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: rgba(16,8,6,.4);
+	}
+}
+
 .gold {
 	color: $primary;
 }
 
 .container {
 	z-index: 99;
+}
+
+.bg-dark-tr {
+	background-color: rgba(9, 9, 9, .8);
 }
 
 .bg-img {
@@ -45,4 +77,9 @@
 		left: 40%;
 		transform: translate(-40%, -50%);
 	}
+}
+
+.spiritus-invictus {
+	width: 140px;
+	height: auto;
 }

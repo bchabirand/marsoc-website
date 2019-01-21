@@ -1,0 +1,12 @@
+#footer {
+	color: $gray-100;
+	font-family: "Source Code Pro";
+	font-size: 13px;
+	li:not(:last-child) {
+		&::after {
+			content: '|';
+			margin: 0 5px;
+			color: $gray-100;
+		}
+	}
+}

@@ -32,21 +32,21 @@
 			background-color: rgba(39,39,32,0.6);
 			z-index: 1;
 		}
-	}
-	.carousel-slide-1 {
-		background-image: url('../img/home/slider/slider-1.jpg');
-	}
-	.carousel-slide-2 {
-		background-image: url('../img/home/slider/slider-2.jpg');
-	}
-	.carousel-slide-3 {
-		background-image: url('../img/home/slider/slider-3.jpg');
-	}
-	.carousel-slide-4 {
-		background-image: url('../img/home/slider/slider-4.jpg');
-	}
-	.carousel-slide-5 {
-		background-image: url('../img/home/slider/slider-5.jpeg');
+		&.slide-1 {
+			background-image: url('../img/home/slider/slider-1.jpg');
+		}
+		&.slide-2 {
+			background-image: url('../img/home/slider/slider-2.jpg');
+		}
+		&.slide-3 {
+			background-image: url('../img/home/slider/slider-3.jpg');
+		}
+		&.slide-4 {
+			background-image: url('../img/home/slider/slider-4.jpg');
+		}
+		&.slide-5 {
+			background-image: url('../img/home/slider/slider-5.jpeg');
+		}
 	}
 	.carousel-text {
 		max-width: 21em;
