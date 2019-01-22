@@ -110,10 +110,6 @@ ul {
   align-items: center; }
   #login form {
     width: 400px;
-    padding: 25px;
-    margin: 0 auto;
-    background-color: #0D0D0D;
-    border-radius: 4px;
     z-index: 99; }
 
 #home {
@@ -252,3 +248,10 @@ label {
   .card .card-grade {
     height: 32px;
     width: auto; }
+
+.alert {
+  font-family: "Oswald"; }
+  .alert.alert-error {
+    background-color: #c2c2c2;
+    font-weight: 500;
+    text-align: center; }
